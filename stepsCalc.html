@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple arithmetic calculator</title>
+</head>
+
+<body>
+
+    <script>
+        let a = parseInt(prompt("Enter first number"));
+        let operator = prompt('Enter a math operator (+,-,*,/)');
+        let b = parseInt(prompt('Enter second number'))
+        let result;
+
+
+        if (typeof a != 'number' && typeof b != 'number') {
+            alert('Invalid operands. Enter a valid number');
+
+        }
+        else {
+            switch (operator) {
+                case '*':
+                    result = a * b;
+                    alert(result);
+                    break;
+                case '/':
+                    result = a / b;
+                    alert(result);
+                    break;
+                case '+':
+                    result = a + b;
+                    alert(result);
+                    break;
+                case '-':
+                    result = a - b;
+                    alert(result);
+                    break;
+                default:
+                    alert('no valid operator found');
+            };
+
+        };
+
+
+    </script>
+</body>
+
+</html>
